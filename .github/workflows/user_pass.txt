@@ -1,0 +1,6 @@
+user: sumit8340
+pass: DXDFpURby4bvnWQP
+
+
+
+mongodb+srv://sumit8340:<db_password>@cluster0.rbjguts.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
