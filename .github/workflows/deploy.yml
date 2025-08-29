@@ -6,7 +6,8 @@ on:
       - main
 env:
   CACHE_KEY: node-deps        
-  MONGODB_DB_NAME: gha-demo  
+  MONGODB_DB_NAME: gha-demo
+  MONGODB_USERNAME: sumit8340  
 jobs:
   test:
     environment: testing
