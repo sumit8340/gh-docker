@@ -13,7 +13,7 @@ jobs:
     environment: testing
     runs-on: ubuntu-latest
     container:
-        image: node:16
+        image: mongo
         
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
