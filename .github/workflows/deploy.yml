@@ -12,21 +12,16 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
-    #container:
-     #   image: mongo
+    container:
+        image: node:16
         
     env:
-      MONGODB_CONNECTION_PROTOCOL: mongodb
-      MONGODB_CLUSTER_ADDRESS: mongodb  
+      MONGODB_CONNECTION_PROTOCOL: mongodb+srv
+      MONGODB_CLUSTER_ADDRESS: cluster0.rbjguts.mongodb.net  
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
-    services:
-        mongodb:
-          image: mongo
-          env:
-            MONGO_INITDB_ROOT_USERNAME: root
-            MONGO_INITDB_ROOT_PASSWORD: example        
+           
     steps:
       - name: Get codes
         uses: actions/checkout@v4
